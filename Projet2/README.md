@@ -1,5 +1,4 @@
 # 
-Url :  [Projet2](https://thomsult.github.io/OpenClassRoom/Projet2/)<br>
 Projet 2 "Reservia", Openclassrooms.
 
 # Reservia
