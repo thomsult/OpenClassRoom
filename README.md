@@ -1,3 +1,3 @@
 # OpenClassRoom
 Open Class Room, Cours non officiel
-<a href="">Projet2</a>
+<a href="/Projet2">Projet2</a>
