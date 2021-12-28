@@ -1,4 +1,4 @@
 # OpenClassRoom
-Open Class Room, Cours non officiel
+<p>Open Class Room, Cours non officiel</p>
 <br>
-<a href="Projet2">Projet2</a>
+<p>GitHub Folder :</p><a href="Projet2">Projet2</a>
