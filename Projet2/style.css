@@ -38,12 +38,14 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+ul,ol{
+    list-style: none;
+}
 
 .Header-list{
     flex-grow: 1;
     display: flex;
     flex-direction: row;
-    list-style: none;
     gap: 3em;
 }
 
@@ -148,19 +150,17 @@ width: 100%;
     -o-border-radius:0 15px 15px 0;
 }
 
-.filtres{
-    margin-bottom: 1em;
-}
-
-.filtres{
+.filtres,.filtres > ul{
     align-items: center;
     justify-content: flex-start;
 
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    list-style: none;
     gap:20px;
+}
+.filtres > ul{
+    margin-bottom: 1em;
 }
 .filtres-item{
     text-decoration: none;
@@ -180,6 +180,7 @@ width: 100%;
     -moz-transition: backgroundColor .5s ease;
     -ms-transition: backgroundColor .5s ease;
     -o-transition: backgroundColor .5s ease;
+    
 }
 .filtres-item>i{
     height: 44px;
@@ -267,7 +268,6 @@ width: 100%;
     padding-bottom: 20px;
 }
 .list-hebergement{
-    list-style: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -319,7 +319,7 @@ overflow: hidden;
     object-fit: cover;
     object-position: center center;
 }
-.hebergement-item > h4,.hebergement-item>p,.hebergement-item>div{
+.hebergement-item > h4,.hebergement-item>p,.hebergement-item>ol{
     padding-left: 0.6rem;
 } 
 .hebergement-item>p::after{
@@ -328,15 +328,15 @@ overflow: hidden;
 
 
 
-.hebergement-item>div{
+.hebergement-item>ol{
     margin-bottom: 5px;
     font-size: 0.7em;
-color: var(--colorblueLight);
 }
-
+.fa-star{color: var(--colorblueLight);}
 .checked {
     color: var(--colorblue);
   }
+
 
 
   .col-titles{
@@ -351,7 +351,6 @@ color: var(--colorblueLight);
       display: grid;
       grid-row: 1fr 1fr 1fr;
       row-gap: 2rem;
-      list-style: none; 
       justify-content: stretch;
       
       width: 100%;
@@ -420,7 +419,7 @@ color: var(--colorblueLight);
 .populaires-item-text > p::after{
     content: "€";
 }
-.populaires-item-text>div{
+.populaires-item-text>ol{
     justify-self: flex-end;
     font-size: 0.6em;
 }
@@ -440,7 +439,6 @@ color: var(--colorblueLight);
     flex-direction: row;
 flex-wrap: wrap;
     margin-top: 1.5em;
-    list-style: none;
     padding-bottom: 2em;
     gap: 2em;
 }
@@ -538,7 +536,6 @@ footer{
 
 .foot{
     width: 100%;
-    list-style: none;
     line-height: 1.7em;
      display: flex;
      flex-direction: column;
@@ -757,7 +754,6 @@ width: 100vw;
     flex-direction: column;
 flex-wrap: wrap;
     margin-top: 1.5em;
-    list-style: none;
     padding-bottom: 2em;
     gap: 2em;
     
