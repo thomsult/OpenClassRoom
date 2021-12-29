@@ -628,7 +628,7 @@ margin-bottom: 1em;
 
 }
 
-.Header-list > li:last-child {
+.Header-list > a:last-child {
   order: -1;
   flex-grow: 1;
   display: block;
@@ -638,10 +638,10 @@ margin-bottom: 1em;
 
 }
 
-.Header-list > li:first-child{
+.Header-list > img{
     order: -1;
 }
-.Header-list > li:nth-of-type(2),.Header-list > li:nth-of-type(3){
+.Header-list > a:nth-of-type(1),.Header-list > a:nth-of-type(2){
 
     flex-grow: 1;
     flex-basis: 50%;
