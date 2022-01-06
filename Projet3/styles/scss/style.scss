@@ -1,0 +1,60 @@
+@use "sass:math";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import 'reset';
+
+
+//variable color
+$blackLogo: #101010;
+
+
+$textHeader : #353535;
+$text : #000000;
+$icon : #7e7e7e;
+
+$dark_gray : #eaeaea;
+$light_gray : #f6f6f6;
+
+$green : #99E2D0;
+$violet: #9356DC;
+$rose : #FF79DA;
+$gradient_bg :$rose;
+$footer : #353535;
+
+$gradient : linear-gradient(-180deg, $rose 0%, $violet 100%);
+
+//end variable color
+
+
+
+
+
+
+
+
+
+
+body{
+    display: flex;
+    flex-direction: column;
+
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    align-items: center;
+
+}
+
+
+
+
+@import 'loader';
+@import 'header','footer';
+
+@import 'page';
+main{
+    flex-grow: 1;
+    width: 100%;
+    background-color: $light_gray
+}
+@import 'desktop';

@@ -1,0 +1,112 @@
+@media screen and (min-width: 1200px) {
+    .Loc-Titles {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+       
+            > .Titles{
+              background-color: rgba(94, 94, 94, 0.719);
+              background-image: url(/images/background/michael-browning-MtqG1lWcUw0-unsplash.jpg);
+              background-size: cover;
+              background-position: center;
+              background-blend-mode:darken;
+              color: #fff;
+        height: 90vh;
+        > h1 {
+          width: 100%;
+          font-weight: 800;
+          text-align: center;
+          margin-bottom: 0.5em;
+          letter-spacing: 0.4px;
+          font-size: 2em;
+        }
+        > p {
+          width: 100%;
+          letter-spacing: 0.4px;
+          font-weight: 400;
+        }
+  }}   
+    .Fonctionnement {
+      margin-top:1em;
+    padding: 1em;
+    > h2 {
+        font-size: 1.3em;
+      letter-spacing: 0.02em;
+      font-weight: 800;
+      margin-bottom: 1rem;
+    }
+    > ol {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+        justify-content:space-around;
+        >li{
+  
+          width: 90%;
+        }
+    }
+    }
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    main{
+  margin-top: 0;
+  padding-top: 1em;
+      &.LandingPage{
+        >ul{
+          width: 95%;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          flex-wrap: wrap;
+          gap: 2em;
+          padding-bottom:2em ;
+          justify-content: space-around;
+          >li:last-child{
+              padding:  0em;
+              
+          }
+          >li{
+            padding:  0em;
+            width:48%;
+            >a>figure>img{
+              height: 13em;
+            }
+  
+          }
+      }
+      }
+      
+      &.main-menu{
+        flex-direction: row;
+        align-items: flex-start;
+        
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1em;
+        margin-top: 1em;
+
+        >.menu{
+          flex-basis: 30%;
+        }
+        >.bt_Commander{
+          max-height: 300px;
+        }
+        
+      }
+    }
+  
+  
+  
+  }

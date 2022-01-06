@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="heart.css">
+</head>
+
+<body>
+    <div class="heartspan"><input class="checkbox_heart" type="checkbox" id="checkbox">
+    <label for="checkbox">
+        <svg class="svg"xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-25 5 580 500">
+        <defs>
+            <clipPath id="clip-path">
+                <path class="path "
+                    d="M462.3,62.6C407.5,15.9,326,24.3,275.7,76.2L256,96.5,236.3,76.2C186.1,24.3,104.5,15.9,49.7,62.6c-62.8,53.6-66.1,149.8-9.9,207.9L233.3,470.3a31.35,31.35,0,0,0,45.3,0L472.1,270.5c56.3-58.1,53-154.3-9.8-207.9Z" />
+            </clipPath>
+            <radialGradient id="shape-gradient" cx="75%" cy="0%" r="100%">
+                <stop offset="0%" stop-color="var(--color-stop)" />
+                <stop offset="100%" stop-color="var(--color-bot)" />
+              </radialGradient>
+              <filter id="gaussian-blur">
+                <feGaussianBlur stdDeviation="1 0" />
+              </filter>
+        </defs>
+        
+        <title>heart-anim</title>
+        <g class="heart">
+            <path class="wave"
+                d="M.42,420l60,16c60,16,180,48,300,48s240-32,360-64,240-64,360-48,240,80,300,112l60,32v497H.42Z" />
+        </g>
+        <path class="path contour"
+            d="M462.3,62.6C407.5,15.9,326,24.3,275.7,76.2L256,96.5,236.3,76.2C186.1,24.3,104.5,15.9,49.7,62.6c-62.8,53.6-66.1,149.8-9.9,207.9L233.3,470.3a31.35,31.35,0,0,0,45.3,0L472.1,270.5c56.3-58.1,53-154.3-9.8-207.9Z"
+            />
+    </svg>
+
+</label></div>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+
+body{
+position: relative;
+overflow: hidden;
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+.heartspan{
+  position: absolute;
+  width: 100%;
+}
+
+.checkbox_heart {
+    display: none;
+}
+label{
+    user-select: none;
+}
+
+.checkbox_heart[type="checkbox"]:checked + label>.svg > g > .wave {
+  transform: translate(-800px, -390px);
+  stroke: #ffffff;
+}
+
+.checkbox_heart[type="checkbox"]:checked + label>.svg > path {
+  stroke: #ffffff;
+}
+
+
+
+#shape-gradient {
+  --color-stop: rgba(147, 86, 220, 0.8);
+  --color-bot: rgba(255, 121, 218, 0.9);
+}
+.wave {
+  filter: url(#gaussian-blur);
+  fill: url(#shape-gradient) #fff;
+  /*transform: translate(0, 0px);
+  */transform: translate(-850px, 110);
+  transition: 0.5s linear;
+  -webkit-transition: 0.5s linear;
+  -moz-transition: 0.5s linear;
+  -ms-transition: 0.5s linear;
+  -o-transition: 0.5s linear;
+}
+
+.path {
+  transition: 0.2s linear 0.3s;
+  fill: none;
+  stroke: #000000;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  stroke-width: 35px;
+  -webkit-transition: 0.2s linear 0.3s;
+  -moz-transition: 0.2s linear 0.3s;
+  -ms-transition: 0.2s linear 0.3s;
+  -o-transition: 0.2s linear 0.3s;
+}
+
+.heart {
+  clip-path: url(#clip-path);
+}

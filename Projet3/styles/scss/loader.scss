@@ -1,0 +1,84 @@
+.loader_ovelay {
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    animation: off;
+    animation-duration: 3s;
+    transition: 3s ease-in-out;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  }
+  
+    .loader {
+        color: #353535;
+        background-color: #faf6f6e3;
+        display: flex;
+        align-items: center;
+        width: 180px;
+        height: 4em;
+        overflow: hidden;
+        padding: 1em;
+        border: solid thin #9256dc49;
+        border-radius: 1em;
+        position: relative;
+  
+    }
+    .count{
+        left: 120px;
+        position: absolute;
+          padding-left: 1em;
+          color: #FF79DA;
+        font-size: 1.3em;
+        animation: loop 3s ease infinite;
+        transform: translateY(-50px);
+    }
+    .count1{
+      left: 120px;
+      position: absolute;
+          padding-left: 1em;
+          color: #FF79DA;
+        font-size: 1.3em;
+        transform: translateY(-50px);
+        animation: loop 3s ease infinite 1s;
+    }
+    .count2{
+      left: 120px;
+      position: absolute;
+          padding-left: 1em;
+          color: #FF79DA;
+        font-size: 1.3em;
+        transform: translateY(-50px);
+        animation: loop 3s ease infinite 2s;
+    }
+  
+  /* Animation du bloc */
+  @keyframes loop {
+      0%{
+          transform: translateY(100px);
+      }
+      50%{
+          transform: translateY(0px);
+      }
+      100%{
+          transform: translateY(-100px);
+      }
+  }
+  
+  @keyframes off{
+    from {
+        z-index: 100;
+      filter: blur(0px);
+  }
+  to {
+      filter: blur(2px);
+      opacity: 0;
+      z-index: -1;
+    
+  }
+  }

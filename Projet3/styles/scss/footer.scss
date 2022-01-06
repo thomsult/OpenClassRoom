@@ -1,0 +1,30 @@
+footer{
+    width: 100%;
+    padding-left: 2em;
+    padding-right: 2em;
+    color: white;
+    background-color: $footer;
+    padding:1.3em 2em 2em;
+
+.logo > img{
+    filter: invert(1);
+    -webkit-filter: invert(1);
+    height: 1.2em;
+    margin-bottom: 1em;
+}
+>ul{
+    line-height: 1.6em;
+}
+>ul>li>a{
+    color: white;
+    font-weight: 500;
+    >i{
+        display: block;
+        width: 1.5em;
+        font-size: 0.8em;
+        margin-right: 0.5em;
+    }
+
+}
+
+}
